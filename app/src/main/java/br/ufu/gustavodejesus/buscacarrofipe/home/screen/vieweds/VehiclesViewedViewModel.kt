@@ -29,7 +29,7 @@ class VehiclesViewedViewModel @Inject constructor(
                 error = null,
                 vehicles = null
             )
-            delay(3000L)
+            delay(1200L)
             when (val result =
                 vehiclesViewedRepository.getVehiclesViewed()
             ) {

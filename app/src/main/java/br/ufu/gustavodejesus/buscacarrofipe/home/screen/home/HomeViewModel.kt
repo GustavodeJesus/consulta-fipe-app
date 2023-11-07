@@ -59,7 +59,7 @@ class HomeViewModel @Inject constructor(
                 error = null,
                 brands = null
             )
-            delay(3000L)
+            delay(1200L)
             when (val result = brandRepository.getBrands(vehicleType = vehicleType)) {
                 is Resource.Success -> {
                     brandState = brandState.copy(
@@ -96,7 +96,7 @@ class HomeViewModel @Inject constructor(
                 error = null,
                 vehicles = null
             )
-            delay(3000L)
+            delay(1200L)
             when (val result =
                 vehicleRepository.getVehiclesFipe(
                     vehicleType,
@@ -130,7 +130,7 @@ class HomeViewModel @Inject constructor(
                 error = null,
                 vehicleModels = null
             )
-            delay(3000L)
+            delay(1200L)
             when (val result = modelRepository.getModels(
                 vehicleType = vehicleType,
                 brandId = brandSelected.code
