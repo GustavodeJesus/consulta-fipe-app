@@ -22,7 +22,7 @@ object FipeModule {
     @Singleton
     fun provideRetrofit(@ApplicationContext context: Context): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("http://BuscaF-Busca-eyA03YSXwyGa-205313591.sa-east-1.elb.amazonaws.com:8080/api/v1/fipe/")
+            .baseUrl("http://BuscaF-Busca-ClGnjpK0bwl5-1751371759.sa-east-1.elb.amazonaws.com:8080/api/v1/fipe/")
             .client(OkHttpBuilder(context).build())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
